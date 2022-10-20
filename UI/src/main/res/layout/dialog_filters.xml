@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="25dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/colorAccent"
+        android:text="@string/apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/filtersDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dialog_filters_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/filtersCountriesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/countries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtersDialogTitle" />
+
+    <RadioGroup
+        android:id="@+id/countryRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/filtersCountriesTitle">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/uae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="AE"
+            android:text="@string/uae" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="US"
+            android:text="@string/usa" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/jo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="JO"
+            android:text="@string/jo" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/filtersCategoriesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/categories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryRadioGroup" />
+
+    <RadioGroup
+        android:id="@+id/categoryRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/filtersCategoriesTitle">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="SPORTS"
+            android:text="@string/sports" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="HEALTH"
+            android:text="@string/health" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="BUSINESS"
+            android:text="@string/business" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

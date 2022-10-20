@@ -1,3 +1,13 @@
 <resources>
-    <string name="items_list_title">Items</string>
+    <string name="news_list_title">News</string>
+    <string name="dialog_filters_title">Filters</string>
+    <string name="apply">apply</string>
+    <string name="countries">Countries:</string>
+    <string name="categories">Categories:</string>
+    <string name="uae">UAE</string>
+    <string name="usa">USA</string>
+    <string name="jo">Jordan</string>
+    <string name="health">Health</string>
+    <string name="sports">Sports</string>
+    <string name="business">Business</string>
 </resources>

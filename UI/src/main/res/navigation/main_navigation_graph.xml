@@ -3,26 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation_graph.xml"
-    app:startDestination="@id/homeListFragment">
+    app:startDestination="@+id/newsListFragment">
 
     <fragment
-        android:id="@+id/homeListFragment"
-        android:name="com.ahmedroid.ui.list.HomeListFragment"
-        android:label="HomeListFragment"
-        tools:layout="@layout/fragment_home_list">
+        android:id="@+id/newsListFragment"
+        android:name="com.ahmedroid.ui.list.NewsListFragment"
+        android:label="NewsListFragment"
+        tools:layout="@layout/fragment_news_list" >
         <action
-            android:id="@+id/action_homeListFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/action_newsListFragment_to_filtersDialog"
+            app:destination="@id/filtersDialog" />
     </fragment>
-    <fragment
-        android:id="@+id/detailsFragment"
-        tools:layout="@layout/fragment_details"
-        android:name="com.ahmedroid.ui.details.DetailsFragment"
-        android:label="DetailsFragment" >
-        <action
-            android:id="@+id/action_detailsFragment_to_homeListFragment"
-            app:popUpTo="@id/homeListFragment"
-            app:popEnterAnim="@anim/nav_default_pop_exit_anim"
-            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
-    </fragment>
+
+    <dialog
+        android:id="@+id/filtersDialog"
+        android:name="com.ahmedroid.ui.list.FiltersDialog"
+        tools:layout="@layout/dialog_filters" />
 </navigation>

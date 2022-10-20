@@ -1,7 +1,11 @@
 android {
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"" + getProperty("app.api.base.url") + "\"")
+            buildConfigField("String", "NEWS_API_URL", "\"" + getProperty("app.newsApi.base.url") + "\"")
+            buildConfigField("String", "NEWS_DATA_URL", "\"" + getProperty("app.newsData.base.url") + "\"")
         }
     }
+}
+
+dependencies {
 }

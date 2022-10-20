@@ -1,4 +1,4 @@
-# Items Browser
+# News Finder
 Assignment
 
 AhmeDroid
