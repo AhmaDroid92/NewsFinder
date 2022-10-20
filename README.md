@@ -4,13 +4,13 @@ Assignment
 AhmeDroid
 
 
-The project is build using Android Studio Bumblebee 2021.1.1
+The project is built using Android Studio Chipmunk 2021.2.1
 Using Android Gradle Plugin 7.1.3
 Using Gradle 7.3.3
 Using Android Build Tools 30.0.3
 Using JDK 11
 
-Note: I did not take the atomic-commit approach with this project although I would've prefered it.
+Note: I did not take the atomic-commit approach with this project although I would've preferred it.
 
 Approach in this project:
 
@@ -18,16 +18,23 @@ MVVM
 
 Clean Code Rules applied
 
-Clean Architecture implemented in a light way
+Clean Architecture implemented in a light way - Android friendly way
 
 DI - using Hilt
 
 Android Architecture Components
 
+Navigation component
+
+ViewBinding
+
+Nothing fancy, just the necessaries :D
+
+New Line at each file's end to make it easier in the future to implement gradle-based tasks
 
 
 Notes:
-No comments, as per Clean Code book written by uncle bob
+Minimal comments, as per Clean Code book written by uncle bob
 
 Core module Acts as a glue between different modules
 
